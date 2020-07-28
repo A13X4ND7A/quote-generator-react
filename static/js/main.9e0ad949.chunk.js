@@ -1,2 +1,0 @@
-(this["webpackJsonpquote-generator-react"]=this["webpackJsonpquote-generator-react"]||[]).push([[0],[,,,function(e,t,n){e.exports=n(4)},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n.n(r),a=n(2);n.n(a).a.render(o.a.createElement("h1",null,"Hello World"),document.getElementById("root"))}],[[3,1,2]]]);
-//# sourceMappingURL=main.9e0ad949.chunk.js.map
