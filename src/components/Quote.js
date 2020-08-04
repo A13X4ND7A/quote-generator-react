@@ -5,9 +5,23 @@ import axios from 'axios';
 const Quote = () => {
 const [authorResult, setAuthorResult] = useState('');
 const [quoteResult, setQuoteResult] = useState('');
+const [result, setResult] = useState('');
+const [query, setQuery] = useState('');
 
-    useEffect(() => {
-        const search = async () => {
+    const handleOnClickTwitter = () => {
+        const quote = quoteResult;
+        const author = authorResult;
+        const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
+        window.open(twitterUrl, '_blank');
+    };
+
+    const handleOnClickNewQuote = () => {
+        
+    };
+
+
+useEffect(() => {
+        const getQuote = async () => {
           const {data} = await axios.get('https://shrouded-sea-82269.herokuapp.com/https://api.forismatic.com/api/1.0/', {
                 params: {
                     method: 'getQuote',
@@ -17,10 +31,18 @@ const [quoteResult, setQuoteResult] = useState('');
             });
             setQuoteResult(data.quoteText);
             setAuthorResult(data.quoteAuthor);
+            setResult(data.quoteText);
         };
-        search();
-    });
+        getQuote();
+}, [query]);
+
+
     return (
+        <form
+            onSubmit={e => {
+                e.preventDefault();
+                setQuery({ query});
+            }} >
         <div className="quote-container" id="quote-container">
 
             <div className="quote-text">
@@ -33,17 +55,23 @@ const [quoteResult, setQuoteResult] = useState('');
             </div>
 
             { <div className="button-container">
-                <button className="twitter-button" id="twitter" title="Tweet this!!">
+                <button 
+                className="twitter-button" 
+                id="twitter" 
+                title="Tweet this!!"
+                onClick={handleOnClickTwitter}
+                >
                     <i className="fab fa-twitter"></i>
                 </button>
                 <button 
                 id="new-quote"
-                onClick={getNewQuote}
+                    onClick={handleOnClickNewQuote}
                 >
                 New Quote
                 </button>
             </div> }
         </div>
+    </form>
     );
 
 };
