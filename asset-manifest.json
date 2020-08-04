@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/quote-generator-react/static/js/main.14b5bbbd.chunk.js",
-    "main.js.map": "/quote-generator-react/static/js/main.14b5bbbd.chunk.js.map",
+    "main.css": "/quote-generator-react/static/css/main.d7dd428e.chunk.css",
+    "main.js": "/quote-generator-react/static/js/main.70a8f33f.chunk.js",
+    "main.js.map": "/quote-generator-react/static/js/main.70a8f33f.chunk.js.map",
     "runtime-main.js": "/quote-generator-react/static/js/runtime-main.880ec01f.js",
     "runtime-main.js.map": "/quote-generator-react/static/js/runtime-main.880ec01f.js.map",
-    "static/js/2.852b3115.chunk.js": "/quote-generator-react/static/js/2.852b3115.chunk.js",
-    "static/js/2.852b3115.chunk.js.map": "/quote-generator-react/static/js/2.852b3115.chunk.js.map",
+    "static/js/2.5438cd00.chunk.js": "/quote-generator-react/static/js/2.5438cd00.chunk.js",
+    "static/js/2.5438cd00.chunk.js.map": "/quote-generator-react/static/js/2.5438cd00.chunk.js.map",
     "index.html": "/quote-generator-react/index.html",
-    "precache-manifest.b4f08ee9fcb96ec1b877d27a37112f2f.js": "/quote-generator-react/precache-manifest.b4f08ee9fcb96ec1b877d27a37112f2f.js",
+    "precache-manifest.1a99a79cb2e9564c197f3c37889d824d.js": "/quote-generator-react/precache-manifest.1a99a79cb2e9564c197f3c37889d824d.js",
     "service-worker.js": "/quote-generator-react/service-worker.js",
-    "static/js/2.852b3115.chunk.js.LICENSE.txt": "/quote-generator-react/static/js/2.852b3115.chunk.js.LICENSE.txt"
+    "static/css/main.d7dd428e.chunk.css.map": "/quote-generator-react/static/css/main.d7dd428e.chunk.css.map",
+    "static/js/2.5438cd00.chunk.js.LICENSE.txt": "/quote-generator-react/static/js/2.5438cd00.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.880ec01f.js",
-    "static/js/2.852b3115.chunk.js",
-    "static/js/main.14b5bbbd.chunk.js"
+    "static/js/2.5438cd00.chunk.js",
+    "static/css/main.d7dd428e.chunk.css",
+    "static/js/main.70a8f33f.chunk.js"
   ]
 }
